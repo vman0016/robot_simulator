@@ -20,7 +20,7 @@ class Simulator
       begin
         @robot.command(instruction)
       rescue => e
-        puts e.message
+        puts "Failed: #{e.message}"
       end
     end
   end
